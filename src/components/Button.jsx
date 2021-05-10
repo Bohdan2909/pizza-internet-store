@@ -1,10 +1,11 @@
+import classNames from 'classnames';
 import React from 'react'
 
-const Button = () => {
+const Button = ({className, outline, children}) => {
    return (
-      <div>
-         
-      </div>
+      <button className={classNames ('button', className, {'button--outline':outline})}>
+         {children}
+      </button>
    )
 }
 
